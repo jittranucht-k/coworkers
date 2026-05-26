@@ -202,7 +202,7 @@ tr.tier-ok.row-active td{background:#fffbf0}tr.tier-po.row-active td{background:
   </div>
   <!-- Daily trend charts (3 col) -->
   <div class="chart-grid" style="grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:18px">
-    <div class="chart-card"><div class="chart-title">🛒 Purchases + Spend รายวัน</div><canvas id="cPurch"></canvas></div>
+    <div class="chart-card"><div class="chart-title">💵 Purchase Value + Spend รายวัน</div><canvas id="cPurch"></canvas></div>
     <div class="chart-card"><div class="chart-title">📈 ROAS รายวัน</div><canvas id="cRoas"></canvas></div>
     <div class="chart-card"><div class="chart-title">💬 Messages & CPMsg รายวัน</div><canvas id="cMsg"></canvas></div>
   </div>
@@ -219,6 +219,7 @@ tr.tier-ok.row-active td{background:#fffbf0}tr.tier-po.row-active td{background:
         <th style="text-align:center">Date</th>
         <th style="text-align:right">Spend ฿</th>
         <th style="text-align:right">Purchases</th>
+        <th style="text-align:right;color:#CE93D8">Purchase Value ฿</th>
         <th style="text-align:right">ROAS</th>
         <th style="text-align:right">Messages</th>
         <th style="text-align:right">CPMsg ฿</th>
@@ -228,6 +229,7 @@ tr.tier-ok.row-active td{background:#fffbf0}tr.tier-po.row-active td{background:
           <td class="td-center"><strong>May 7</strong></td>
           <td class="td-right">฿3,647</td>
           <td class="td-right td-purchases"><strong>21</strong></td>
+          <td class="td-right" style="color:#7B1FA2;font-weight:700">฿7,514</td>
           <td class="td-right td-roas">2.06x</td>
           <td class="td-right">50</td>
           <td class="td-right">฿72.9</td>
@@ -237,6 +239,7 @@ tr.tier-ok.row-active td{background:#fffbf0}tr.tier-po.row-active td{background:
           <td class="td-center"><strong>May 8</strong></td>
           <td class="td-right">฿6,823</td>
           <td class="td-right td-purchases"><strong>44</strong></td>
+          <td class="td-right" style="color:#7B1FA2;font-weight:700">฿16,855</td>
           <td class="td-right td-roas">2.47x</td>
           <td class="td-right">81</td>
           <td class="td-right">฿84.2</td>
@@ -246,6 +249,7 @@ tr.tier-ok.row-active td{background:#fffbf0}tr.tier-po.row-active td{background:
           <td class="td-center"><strong>May 9</strong></td>
           <td class="td-right">฿6,610</td>
           <td class="td-right td-purchases"><strong>54</strong></td>
+          <td class="td-right" style="color:#7B1FA2;font-weight:700">฿20,786</td>
           <td class="td-right td-roas">3.14x</td>
           <td class="td-right">86</td>
           <td class="td-right">฿76.9</td>
@@ -255,6 +259,7 @@ tr.tier-ok.row-active td{background:#fffbf0}tr.tier-po.row-active td{background:
           <td class="td-center"><strong>May 10</strong></td>
           <td class="td-right">฿8,601</td>
           <td class="td-right td-purchases"><strong>64</strong></td>
+          <td class="td-right" style="color:#7B1FA2;font-weight:700">฿27,134</td>
           <td class="td-right td-roas">3.15x</td>
           <td class="td-right">125</td>
           <td class="td-right">฿68.8</td>
@@ -264,6 +269,7 @@ tr.tier-ok.row-active td{background:#fffbf0}tr.tier-po.row-active td{background:
           <td class="td-center"><strong>May 11</strong></td>
           <td class="td-right">฿12,673</td>
           <td class="td-right td-purchases"><strong>102</strong></td>
+          <td class="td-right" style="color:#7B1FA2;font-weight:700">฿39,775</td>
           <td class="td-right td-roas">3.14x</td>
           <td class="td-right">237</td>
           <td class="td-right">฿53.5</td>
@@ -273,6 +279,7 @@ tr.tier-ok.row-active td{background:#fffbf0}tr.tier-po.row-active td{background:
           <td class="td-center"><strong>May 12</strong></td>
           <td class="td-right">฿16,223</td>
           <td class="td-right td-purchases"><strong>108</strong></td>
+          <td class="td-right" style="color:#7B1FA2;font-weight:700">฿39,966</td>
           <td class="td-right td-roas">2.46x</td>
           <td class="td-right">268</td>
           <td class="td-right">฿60.5</td>
@@ -282,6 +289,7 @@ tr.tier-ok.row-active td{background:#fffbf0}tr.tier-po.row-active td{background:
           <td class="td-center"><strong>May 13</strong></td>
           <td class="td-right">฿32,258</td>
           <td class="td-right td-purchases"><strong>192</strong></td>
+          <td class="td-right" style="color:#7B1FA2;font-weight:700">฿70,155</td>
           <td class="td-right td-roas">2.17x</td>
           <td class="td-right">504</td>
           <td class="td-right">฿64.0</td>
@@ -291,6 +299,7 @@ tr.tier-ok.row-active td{background:#fffbf0}tr.tier-po.row-active td{background:
           <td class="td-center"><strong>May 14</strong></td>
           <td class="td-right">฿30,776</td>
           <td class="td-right td-purchases"><strong>225</strong></td>
+          <td class="td-right" style="color:#7B1FA2;font-weight:700">฿81,041</td>
           <td class="td-right td-roas">2.63x</td>
           <td class="td-right">455</td>
           <td class="td-right">฿67.6</td>
@@ -300,6 +309,7 @@ tr.tier-ok.row-active td{background:#fffbf0}tr.tier-po.row-active td{background:
           <td class="td-center"><strong>May 15</strong></td>
           <td class="td-right">฿27,844</td>
           <td class="td-right td-purchases"><strong>165</strong></td>
+          <td class="td-right" style="color:#7B1FA2;font-weight:700">฿58,546</td>
           <td class="td-right td-roas">2.10x</td>
           <td class="td-right">338</td>
           <td class="td-right">฿82.4</td>
@@ -309,6 +319,7 @@ tr.tier-ok.row-active td{background:#fffbf0}tr.tier-po.row-active td{background:
           <td class="td-center"><strong>May 16</strong></td>
           <td class="td-right">฿23,549</td>
           <td class="td-right td-purchases"><strong>134</strong></td>
+          <td class="td-right" style="color:#7B1FA2;font-weight:700">฿48,067</td>
           <td class="td-right td-roas">2.04x</td>
           <td class="td-right">257</td>
           <td class="td-right">฿91.6</td>
@@ -318,6 +329,7 @@ tr.tier-ok.row-active td{background:#fffbf0}tr.tier-po.row-active td{background:
           <td class="td-center"><strong>May 17</strong></td>
           <td class="td-right">฿20,866</td>
           <td class="td-right td-purchases"><strong>116</strong></td>
+          <td class="td-right" style="color:#7B1FA2;font-weight:700">฿45,446</td>
           <td class="td-right td-roas">2.18x</td>
           <td class="td-right">219</td>
           <td class="td-right">฿95.3</td>
@@ -327,6 +339,7 @@ tr.tier-ok.row-active td{background:#fffbf0}tr.tier-po.row-active td{background:
           <td class="td-center"><strong>May 18</strong></td>
           <td class="td-right">฿14,933</td>
           <td class="td-right td-purchases"><strong>73</strong></td>
+          <td class="td-right" style="color:#7B1FA2;font-weight:700">฿26,209</td>
           <td class="td-right td-roas">1.76x</td>
           <td class="td-right">146</td>
           <td class="td-right">฿102.3</td>
@@ -336,6 +349,7 @@ tr.tier-ok.row-active td{background:#fffbf0}tr.tier-po.row-active td{background:
           <td class="td-center"><strong>May 19</strong></td>
           <td class="td-right">฿9,869</td>
           <td class="td-right td-purchases"><strong>55</strong></td>
+          <td class="td-right" style="color:#7B1FA2;font-weight:700">฿19,708</td>
           <td class="td-right td-roas">2.00x</td>
           <td class="td-right">113</td>
           <td class="td-right">฿87.3</td>
@@ -345,6 +359,7 @@ tr.tier-ok.row-active td{background:#fffbf0}tr.tier-po.row-active td{background:
           <td class="td-center"><strong>May 20</strong></td>
           <td class="td-right">฿11,742</td>
           <td class="td-right td-purchases"><strong>54</strong></td>
+          <td class="td-right" style="color:#7B1FA2;font-weight:700">฿25,273</td>
           <td class="td-right td-roas">2.15x</td>
           <td class="td-right">116</td>
           <td class="td-right">฿101.2</td>
@@ -354,6 +369,7 @@ tr.tier-ok.row-active td{background:#fffbf0}tr.tier-po.row-active td{background:
           <td class="td-center"><strong>May 21</strong></td>
           <td class="td-right">฿11,673</td>
           <td class="td-right td-purchases"><strong>58</strong></td>
+          <td class="td-right" style="color:#7B1FA2;font-weight:700">฿21,405</td>
           <td class="td-right td-roas">1.83x</td>
           <td class="td-right">128</td>
           <td class="td-right">฿91.2</td>
@@ -363,6 +379,7 @@ tr.tier-ok.row-active td{background:#fffbf0}tr.tier-po.row-active td{background:
           <td class="td-center"><strong>May 22</strong></td>
           <td class="td-right">฿12,854</td>
           <td class="td-right td-purchases"><strong>54</strong></td>
+          <td class="td-right" style="color:#7B1FA2;font-weight:700">฿21,525</td>
           <td class="td-right td-roas">1.67x</td>
           <td class="td-right">107</td>
           <td class="td-right">฿120.1</td>
@@ -372,6 +389,7 @@ tr.tier-ok.row-active td{background:#fffbf0}tr.tier-po.row-active td{background:
           <td class="td-center"><strong>May 23</strong></td>
           <td class="td-right">฿10,282</td>
           <td class="td-right td-purchases"><strong>58</strong></td>
+          <td class="td-right" style="color:#7B1FA2;font-weight:700">฿24,621</td>
           <td class="td-right td-roas">2.39x</td>
           <td class="td-right">91</td>
           <td class="td-right">฿113.0</td>
@@ -381,6 +399,7 @@ tr.tier-ok.row-active td{background:#fffbf0}tr.tier-po.row-active td{background:
           <td class="td-center"><strong>May 24</strong></td>
           <td class="td-right">฿10,417</td>
           <td class="td-right td-purchases"><strong>41</strong></td>
+          <td class="td-right" style="color:#7B1FA2;font-weight:700">฿14,705</td>
           <td class="td-right td-roas">1.41x</td>
           <td class="td-right">98</td>
           <td class="td-right">฿106.3</td>
@@ -390,6 +409,7 @@ tr.tier-ok.row-active td{background:#fffbf0}tr.tier-po.row-active td{background:
           <td class="td-center"><strong>May 25</strong></td>
           <td class="td-right">฿7,892</td>
           <td class="td-right td-purchases"><strong>39</strong></td>
+          <td class="td-right" style="color:#7B1FA2;font-weight:700">฿15,718</td>
           <td class="td-right td-roas">1.99x</td>
           <td class="td-right">58</td>
           <td class="td-right">฿136.1</td>
@@ -4182,6 +4202,7 @@ function sortTable(col){
 // ── Overview Charts ──────────────────────────────────────────
 const C_LABELS  = ["May 7", "May 8", "May 9", "May 10", "May 11", "May 12", "May 13", "May 14", "May 15", "May 16", "May 17", "May 18", "May 19", "May 20", "May 21", "May 22", "May 23", "May 24", "May 25"];
 const C_PURCH   = [21, 44, 54, 64, 102, 108, 192, 225, 165, 134, 116, 73, 55, 54, 58, 54, 58, 41, 39];
+const C_PV      = [7514.0, 16855.0, 20786.0, 27134.0, 39775.0, 39966.0, 70155.0, 81041.0, 58546.0, 48067.0, 45446.0, 26209.0, 19708.0, 25273.0, 21405.0, 21525.0, 24621.0, 14705.0, 15718.0];
 const C_ROAS    = [2.06, 2.47, 3.14, 3.15, 3.14, 2.46, 2.17, 2.63, 2.1, 2.04, 2.18, 1.76, 2.0, 2.15, 1.83, 1.67, 2.39, 1.41, 1.99];
 const C_SPEND   = [3647.0, 6823.0, 6610.0, 8601.0, 12673.0, 16223.0, 32258.0, 30776.0, 27844.0, 23549.0, 20866.0, 14933.0, 9869.0, 11742.0, 11673.0, 12854.0, 10282.0, 10417.0, 7892.0];
 const C_MSGS    = [50, 81, 86, 125, 237, 268, 504, 455, 338, 257, 219, 146, 113, 116, 128, 107, 91, 98, 58];
@@ -4200,9 +4221,9 @@ function mkChart(id,type,data,opts){
 
 mkChart('cPurch','bar',{labels:C_LABELS,datasets:[
   {label:'Spend ฿',data:C_SPEND,backgroundColor:'rgba(68,114,196,.25)',yAxisID:'y2',type:'line',tension:.4,borderColor:BLUE,pointRadius:3},
-  {label:'Purchases',data:C_PURCH,backgroundColor:C_PURCH.map(v=>v>=60?NAVY:v>=30?BLUE:LBLUE),borderRadius:5,yAxisID:'y1'}
+  {label:'Purchase Value ฿',data:C_PV,backgroundColor:C_PV.map(v=>v>=20000?'#7B1FA2':v>=10000?'#AB47BC':'#CE93D8'),borderRadius:5,yAxisID:'y1'}
 ]},{plugins:{legend:{labels:{font:{size:10}}}},scales:{
-  y1:{beginAtZero:true,position:'left',ticks:{font:{size:9}}},
+  y1:{beginAtZero:true,position:'left',ticks:{callback:v=>'฿'+Math.round(v).toLocaleString(),font:{size:9}}},
   y2:{beginAtZero:true,position:'right',grid:{drawOnChartArea:false},ticks:{callback:v=>'฿'+Math.round(v).toLocaleString(),font:{size:9}}}
 }});
 
